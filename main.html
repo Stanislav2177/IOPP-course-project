@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="main.css" />
+
+    <style>
+      .hidden {
+        display: none;
+      }
+      .visible {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Обяснение за играта</h1>
+      Двама души, извършили престъпление, са заподозряни и биват разпитвани в
+      отделни помещения. Ако и двамата мълчат, при липса на доказателства няма
+      да бъдат осъдени, т.е. ще спечелят. Дилемата обаче на всеки от тях двамата
+      е следната: „Ако аз си мълча, а другият си признае, то той ще получи
+      по-малка присъда, защото съдейства на правосъдието, аз аз ще имам по-тежка
+      присъда, защото не съм признал.“ Има обаче и трети вариант – ако и двамата
+      признаят, и двамата ще бъдат осъдени. Всеки от тях може да избере да си
+      мълчи и да се надява и другият да мълчи или да си признае (за да има
+      по-малка присъда) и да се надява другият да упорства с мълчание.
+    </div>
+
+    <div>
+      <p>Press to start the game</p>
+      <button id="buttonStart">Start</button>
+    </div>
+
+    <div id="playerOneAnswer" class="hidden">
+      <p>Играч 1, ще признаете ли за престъплението?</p>
+      <button id="buttonFirstPlayerYes">Признай</button>
+      <button id="buttonFirstPlayerNo">Не признавай</button>
+    </div>
+
+    <div id="playerTwoAnswer" class="hidden">
+      <p>Играч 2, ще признаете ли за престъплението?</p>
+      <button id="buttonSecondPlayerYes">Признай</button>
+      <button id="buttonSecondPlayerNo">Не признавай</button>
+    </div>
+
+    <div id="logicExplanation" class="hidden">
+      <h2>Логика на програмата</h2>
+      <p id="explanationPlayerOne"></p>
+      <p id="explanationPlayerTwo"></p>
+      <p id="explanationConclusion"></p>
+    </div>
+    <span id="errorName"></span>
+
+    <script src="script.js"></script>
+  </body>
+</html>
